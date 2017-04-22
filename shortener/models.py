@@ -13,7 +13,7 @@ MAX_SHORTCODE = getattr(settings, 'MAX_SHORTCODE', 16)# same as MAX_SHORTCODE = 
 # to show overriding methods in Models Managers like all, count, filter.
 class UrlManager(models.Manager):
     def all(self, *args, **kwargs):
-        qsinit = super().all(*args, **kwargs)
+        qsinit = super(UrlManager, self).all(*args, **kwargs)
         # print(qsinit)
         qs = qsinit.filter(active=True)
         return qs
@@ -40,7 +40,7 @@ class UrlShort(models.Model):
     def save(self, *args, **kwargs):
         if self.shortcode is None or self.shortcode == '':
             self.shortcode = create_shortcode(self)
-        super().save(*args, **kwargs)
+        super(UrlShort, self).save(*args, **kwargs)
 
     def __str__(self):
         return str(self.url)
