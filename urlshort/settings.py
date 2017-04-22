@@ -25,10 +25,10 @@ SECRET_KEY = 'xul@x#+waa(0%&6-l+2$s@0t6891_h=0379#0!lu16!upyr-$l'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.shorty.com', 'shorty.com', 'localhost', '127.0.0.1:8000', '0.0.0.0']
+ALLOWED_HOSTS = ['www.shortee.com', 'shortee.com', 'localhost', '127.0.0.1:8000', '0.0.0.0', 'shortee.herokuapp.com']
 
 
-# Application definition
+# A pplication definition
 # These are djangp/python modules
 #controls or does something
 INSTALLED_APPS = [

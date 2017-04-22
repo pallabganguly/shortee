@@ -21,7 +21,7 @@ class HomeView(View):
     def get(self, request, *args, **kwargs):
         form = SubmitUrlForm()
         context = {
-            "title": "Shorty",
+            "title": "Shortee",
             "form": form
         }
         return render(request, 'shortener/home.html', context)   # context-dictionary which is passed to home.html
@@ -42,7 +42,7 @@ class HomeView(View):
                 return render(request, 'shortener/exists.html', submittedcontext)
 
         context = {
-            "title": "Shorty",
+            "title": "Shortee",
             "form": form
         }
         return render(request, 'shortener/home.html', context)

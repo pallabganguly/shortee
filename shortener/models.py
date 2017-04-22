@@ -46,7 +46,7 @@ class UrlShort(models.Model):
         return str(self.url)
 
     def get_short_url(self):
-        return "http://www.shorty.com:8000/{scode}".format(scode=self.shortcode)
+        return "http://www.shortee.com:5000/{scode}".format(scode=self.shortcode)
 
 
 '''
