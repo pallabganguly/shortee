@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class='text-center'>Just Created!</h1>
+<div class='text-center'>
+  <p>
+    {{ object.url }}
+  </p>
+  <p>
+    <form>
+      <input type="text" value="{{ object.get_short_url }}">
+    </form>
+  </p>
+  <br>
+  <a class='btn btn-info' href="/">Create another!</a>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <body>
+    <div class='container outer'>
+      <div class='row middle'>
+        <div class='text-center col-sm-12 col-md-12'>
+          <h1>{{ title }}</h1>
+          <br>
+          <div class='col-sm-4 col-sm-offset-4 site-wrapper-inner'>
+            <form method="POST" action="."> {% csrf_token %}
+              <!-- <input name="url" type="text" placeholder="Enter a url.." /> -->
+              {{ form }}
+              <input class='btn btn-success' type="submit" value="Shorten!" >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+{% endblock %}
