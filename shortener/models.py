@@ -46,7 +46,7 @@ class UrlShort(models.Model):
         return str(self.url)
 
     def get_short_url(self):
-        return "http://www.shortee.com:5000/{scode}".format(scode=self.shortcode)
+        return "https://shortee.herokuapp.com/{scode}".format(scode=self.shortcode)
 
 
 '''
