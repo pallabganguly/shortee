@@ -36,10 +36,11 @@ class HomeView(View):
                 "object": obj,
                 "created": created,
             }
-            if created:
-                return render(request, 'shortener/success.html', submittedcontext)
-            else:
-                return render(request, 'shortener/exists.html', submittedcontext)
+            # if created:
+            #     return render(request, 'shortener/success.html', submittedcontext)
+            # else:
+            #     return render(request, 'shortener/exists.html', submittedcontext)
+            return render(request, 'shortener/success.html', submittedcontext)
 
         context = {
             "title": "Shortee",
