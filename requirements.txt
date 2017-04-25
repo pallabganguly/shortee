@@ -4,4 +4,5 @@ django-hosts==2.0
 gunicorn==19.7.1
 packaging==16.8
 pyparsing==2.2.0
+pyperclip==1.5.27
 six==1.10.0
