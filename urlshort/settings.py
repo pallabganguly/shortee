@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['www.shortee.com', 'shortee.com', 'localhost', '127.0.0.1:8000'
 
 
 # A pplication definition
-# These are djangp/python modules
+# These are django/python modules
 #controls or does something
 INSTALLED_APPS = [
     'django.contrib.admin',
